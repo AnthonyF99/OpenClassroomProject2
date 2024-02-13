@@ -58,6 +58,43 @@ a {
     color: var(--main-bg-color)
 }
 
+/****** Recherche et filtre ***********/
+.research {
+    display: flex;
+    width: 50%;
+}
+
+.research-filter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.research_btn {
+    color: white;
+    background-color: #0065FC;
+    border: none;
+    width: 120px;
+    height: 40px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.filter_btn {
+    border: solid 1px ;
+    width: 120px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 25px;
+}
+
+.filter_btn:hover {
+    background-color: #DEEBFF;
+}
+
+.info-research {
+    display: flex;
+    flex-direction: row;
+}
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -76,9 +113,15 @@ a {
     width: 65%;
 }
 
+.hebergements-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .hebergements-cards .card {
     display: flex;
-    width: 50%;
+    width: 100%;
     flex-direction: column;
     margin-top: 33px;
 }
@@ -91,7 +134,7 @@ a {
 }
 
 .hebergements-cards .card-content {
-    width: 67%;
+    width: 100%;
     padding-left: 15px;
     display: flex;
     flex-direction: column;
