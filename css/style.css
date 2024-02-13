@@ -67,10 +67,16 @@ a {
 .research-filter {
     display: flex;
     justify-content: space-between;
+    font-weight: bold;
+}
+
+.search_input {
+    border-radius: 10px;
 }
 
 .research_btn {
     color: white;
+    font-weight: bold;
     background-color: #0065FC;
     border: none;
     width: 120px;
@@ -80,6 +86,7 @@ a {
 }
 
 .filter_btn {
+    font-weight: bold;
     border: solid 1px ;
     width: 120px;
     height: 40px;
@@ -114,31 +121,28 @@ a {
 }
 
 .hebergements-cards {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Trois colonnes égales */
+    grid-gap: 20px; /* Espacement entre les cartes */
 }
 
 .hebergements-cards .card {
     display: flex;
-    width: 100%;
     flex-direction: column;
     margin-top: 33px;
 }
 
 .hebergements-cards img {
     width: 100%;
-    height: 136px;
+    height: 100px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
 .hebergements-cards .card-content {
-    width: 100%;
     padding-left: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     box-sizing: border-box;
 }
 
@@ -189,7 +193,6 @@ a {
 
 /****** Activités ***********/
 .activites section {
-    background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
     margin-top: 50px;
