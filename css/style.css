@@ -58,20 +58,59 @@ a {
     color: var(--main-bg-color)
 }
 
+/****** Header ***********/
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+.home-logo {
+    width: 61.09px;
+    height: 19px;
+    margin-top: 10px;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+}
+
+.navigation a:hover {
+    color: #0065FC;
+}
+
 /****** Recherche et filtre ***********/
 .research {
     display: flex;
-    width: 50%;
+    flex-direction: column;
+    width: 100%;
 }
 
-.research-filter {
-    display: flex;
-    justify-content: space-between;
-    font-weight: bold;
+.location_btn {
+    width: 50px;
+    height: 49px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 1px;
+}
+
+.location_btn .fa-solid {
+    color: black;
+    width: 14px;
+    height: 18px;
 }
 
 .search_input {
-    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+    height: 49px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px;
 }
 
 .research_btn {
@@ -79,19 +118,32 @@ a {
     font-weight: bold;
     background-color: #0065FC;
     border: none;
-    width: 120px;
-    height: 40px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    width: 132px;
+    height: 49px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.research-filter {
+    display: flex;
+    font-weight: bold;
+    gap: 10px;
+}
+
+.filter_btn .fa-solid {
+    width: 22px;
+    height: 22px;
 }
 
 .filter_btn {
     font-weight: bold;
-    border: solid 1px ;
-    width: 120px;
-    height: 40px;
+    border: solid 2px ;
+    border-color: #D9D9D9;
+    width: 173px;
+    height: 50px;
     background-color: transparent;
     border-radius: 25px;
+
 }
 
 .filter_btn:hover {
@@ -130,6 +182,8 @@ a {
     display: flex;
     flex-direction: column;
     margin-top: 33px;
+    width: 250.33px;
+    height: 207.25px;
 }
 
 .hebergements-cards img {
@@ -144,6 +198,11 @@ a {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+}
+
+.plus-link-container {
+    margin-top: 30px;
+    font-weight: bold;
 }
 
 /****** Populaires ***********/
@@ -210,6 +269,8 @@ a {
     display: flex;
     flex-direction: column;
     margin-top: 33px;
+    width: 297px;
+    height: 439px;
     background-color: transparent;
 }
 
@@ -229,6 +290,28 @@ a {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
+/****** Footer ***********/
+
+.footer-container {
+    width: 100%;
+    margin-top: 50px;
+    background-color: #F2F2F2;
+}
+
+.footer-infos {
+    display: flex;
+    padding-left: 15px;
+}
+
+.footer-infos ul {
+    padding-left: 0;
+    list-style: none;
+    width: 446px;
+}
+
+.footer-infos li {
+    padding-top: 10px;
+}
 
 
 
