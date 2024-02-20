@@ -352,6 +352,7 @@ a {
 
 .activites-cards img {
     width: 100%;
+    max-width: 297.5px;
     height: 380px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
