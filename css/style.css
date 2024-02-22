@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .main-container {
@@ -378,16 +379,15 @@ a {
 .footer-infos {
     display: flex;
     padding-left: 15px;
+    gap: 30px;
 }
 
 .footer-infos ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     padding-left: 0;
     list-style: none;
-    width: 446px;
-}
-
-.footer-infos li {
-    padding-top: 10px;
 }
 
 
@@ -435,31 +435,12 @@ a {
     .menu {
         flex-direction: column;
         align-items: center;
+        border-bottom: 1px solid #F2F2F2;
     }
 
     .navigation ul {
         justify-content: center; 
         gap: 60px;
-    }
-
-    .hebergements {
-        margin-top: 50px;
-    }
-
-    .hebergements-cards {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 20px;
-    }
-
-    .hebergements-cards a {
-        width: 100%;
-    }
-
-    .activites-cards {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
     }
 
     .footer-infos {
@@ -483,7 +464,6 @@ a {
 
     .research-filter p {
         grid-area: title;
-        text-align: center;
     }
 
     .research-filter {
@@ -503,13 +483,33 @@ a {
         width: 100%;
     }
 
-    .populaires {
-        order: -1;
-        margin-top: 200px;
+    /* Hébergements */
+
+    .hebergements {
+        background-color: transparent !important;
+        margin-top: 50px;
+    }
+
+    .hebergements-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    .hebergements-cards a {
+        width: 100%;
     }
 
     .hebergements {
         order: 1;
+    }
+
+    /* Populaires */
+ 
+    .populaires {
+        background-color: #F2F2F2 !important;
+        order: -1;
+        margin-top: 200px;
     }
 
     .populaires-cards {
@@ -520,10 +520,25 @@ a {
         width: 100%;
     }
 
+    /* Activité */
+
+    .activites-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+    }
+
     .activites-cards img {
+        width: 100%;
         height: 141px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+    }
+    
+    .activites-title {
+        padding-left:50px;
     }
 
 }
