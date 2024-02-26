@@ -72,6 +72,7 @@ a {
 
 }
 .home-logo {
+    display: flex;
     height: 19px;
     margin-top: 10px;
 }
@@ -198,7 +199,6 @@ a {
 .filter_btn {
     display: flex;
     align-items: center;
-    justify-content: center;
     font-size: 17px;
     height: 50px;
     font-weight: bold;
@@ -490,19 +490,28 @@ a {
     /* Header menu navigation */
     .menu {
         flex-direction: column;
-        border-bottom: 1px solid #F2F2F2;
+        justify-content: center;
+        margin-bottom: 60px;
     }
 
     .home-logo {
-        padding-left: 30px;
+        padding: 30px;
     }
 
-    .navigation li, .navigation ul {
+    .navigation {
+        width: 100%;
+        border-bottom: 1px solid #F2F2F2;
+    }
+
+    .navigation ul {
         display: flex;
-        align-items: center;
-        text-align: center;
+        justify-content: space-around;
+        padding: 10px;
         margin: 0;
-        padding: 10px 20px;
+    }
+
+    .navigation li {
+        margin-right: 0px;
     }
 
     .navigation a:hover:after {
@@ -532,6 +541,11 @@ a {
     .location_ico {
         width: 80px;
     }
+    
+    .research {
+        padding: 0;
+        margin: 0;
+    }
 
     .research_btn {
         width: 49px;
@@ -542,6 +556,7 @@ a {
     }
 
     .filter-bar {
+        width: 100%;
         gap: 20px;
     }
 
@@ -555,7 +570,6 @@ a {
     .info-research {
         display: flex;
         align-items: center;
-        align-self: stretch;
         margin-top: 35px;
     }
 
@@ -563,7 +577,6 @@ a {
         width: 100%;
         padding: 4px 19px;
         height: 50px;
-        white-space: nowrap;
     }
 
     /* Hébergements */
