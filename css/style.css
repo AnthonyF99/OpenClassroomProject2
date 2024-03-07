@@ -501,6 +501,10 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    .main-container {
+        padding: 0 0px;
+    }
+
     /* Header menu navigation */
     .menu {
         flex-direction: column;
@@ -557,7 +561,7 @@ a {
     }
     
     .research {
-        padding: 0;
+        padding: 0 20px;
         margin: 0;
     }
 
@@ -596,6 +600,10 @@ a {
 
     /* Hébergements */
 
+    section#redirect-hebergements {
+        padding: 20px;
+    }    
+
     .hebergements {
         background-color: transparent !important;
     }
@@ -616,10 +624,16 @@ a {
     }
 
     /* Populaires */
+
+    section.populaires {
+        padding: 20px;
+    }
  
     .populaires {
         background-color: #F2F2F2 !important;
+        border-radius: 0px !important;
         order: -1;
+        padding: 0;
     }
 
     .populaires-cards {
@@ -631,6 +645,11 @@ a {
     }
 
     /* Activité */
+
+    section#redirect-activites {
+        padding: 30px;
+        box-sizing: border-box;
+    }
 
     .activites {
         padding: 0px;
@@ -662,6 +681,7 @@ a {
     .footer-infos {
         display: flex;
         flex-direction: column;
+        padding: 30px;
     }
 
 }
