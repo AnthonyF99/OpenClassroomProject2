@@ -15,5 +15,5 @@ Booki est un site vitrine pour une agence de voyage, développé uniquement en H
 ## Comment exécuter le projet
 1. Clonez le dépôt :  
    ```bash
-   git clone https://github.com/username/OpenClassroomProject2.git
+   git clone https://github.com/AnthonyF99/OpenClassroomProject2.git
 2. Ouvrez index.html dans votre navigateur. 
